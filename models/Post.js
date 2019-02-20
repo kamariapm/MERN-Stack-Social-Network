@@ -10,7 +10,7 @@ const PostSchema = new Schema({
   },
   text: {
     type: String,
-    required: false
+    required: true
   },
   name: {
     type: String

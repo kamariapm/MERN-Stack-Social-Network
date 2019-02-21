@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const PostSchema = new Schema({
   //connecting each post to a user
   user: {
-    type: String.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: "users"
   },
   text: {
@@ -21,7 +21,7 @@ const PostSchema = new Schema({
   likes: [
     {
       user: {
-        type: String.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "users"
       }
     }
@@ -29,7 +29,7 @@ const PostSchema = new Schema({
   comments: [
     {
       user: {
-        type: String.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "users"
       },
       text: {

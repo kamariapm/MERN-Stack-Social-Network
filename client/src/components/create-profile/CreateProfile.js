@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import TextFieldGroup from "../common/TextFieldGroup";
+import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
+import InputGroup from "../common/InputGroup";
+import SelectListGroup from "../common/SelectListGroup";
 
 class CreateProfile extends Component {
   constructor(props) {
@@ -34,7 +37,7 @@ class CreateProfile extends Component {
               <p className="lead text-center">
                 Let' get some information to make your profile stand out
               </p>
-              <small className="d-black pb-3">* = required fields</small>
+              <small className="d-black pb-3">* =required fields</small>
             </div>
           </div>
         </div>
@@ -53,4 +56,4 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(null)(CreateProfile);
+export default connect(mapStateToProps)(CreateProfile);

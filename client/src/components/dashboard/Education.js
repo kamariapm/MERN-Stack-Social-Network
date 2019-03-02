@@ -18,7 +18,7 @@ class Education extends Component {
           {edu.to === null ? (
             " Now"
           ) : (
-            <Moment fromat="MM/YYYY">{edu.to}</Moment>
+            <Moment format="MM/YYYY">{edu.to}</Moment>
           )}
         </td>
         <td>

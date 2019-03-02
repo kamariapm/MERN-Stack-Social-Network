@@ -4,6 +4,7 @@ import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextFieldGroup";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { addExperience } from "../../actions/profileActions";
 
 class AddExperience extends Component {
   //since there are several form fields, will need a constructor with some state
@@ -27,9 +28,25 @@ class AddExperience extends Component {
     this.onCheck = this.onCheck.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
+  }
+
   onSubmit(e) {
     e.preventDefault();
-    console.log("submit");
+    //will call addExperience when form is submitted
+    const expData = {
+      company: this.state.company,
+      title: this.state.title,
+      location: this.state.location,
+      from: this.state.from,
+      to: this.state.to,
+      current: this.state.current,
+      description: this.state.description
+    };
+    this.props.addExperience(expData, this.props.history);
   }
 
   onChange(e) {
@@ -136,6 +153,7 @@ class AddExperience extends Component {
 }
 
 AddExperience.propTypes = {
+  addExperience: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
@@ -146,4 +164,7 @@ const mapStateToProps = state => ({
 });
 
 //state to props form redux
-export default connect(mapStateToProps)(withRouter(AddExperience));
+export default connect(
+  mapStateToProps,
+  { addExperience }
+)(withRouter(AddExperience));

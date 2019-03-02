@@ -160,7 +160,7 @@ class CreateProfile extends Component {
                   onChange={this.onChange}
                   options={options}
                   error={errors.status}
-                  info="Give us an idea of where you are at in your career"
+                  info="Give us an idea of where you are in your career"
                 />
                 <TextFieldGroup
                   placeholder="Company"

@@ -25,6 +25,7 @@ class Profiles extends Component {
         profileItems = <h4>No profiles found...</h4>;
       }
     }
+
     return (
       <div className="profiles">
         <div className="container">

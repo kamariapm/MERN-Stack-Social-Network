@@ -196,7 +196,7 @@ class CreateProfile extends Component {
                     HTML,CSS,JavaScript,PHP"
                 />
                 <TextFieldGroup
-                  placeholder="Github Username"
+                  placeholder="Github Username - NO URL, Username ONLY"
                   name="githubusername"
                   value={this.state.githubusername}
                   onChange={this.onChange}

@@ -9,7 +9,6 @@ import Experience from "./Experience";
 import Education from "./Education";
 
 class Dashboard extends Component {
-  //LIFECYCLE METHOD
   componentDidMount() {
     this.props.getCurrentProfile();
   }
@@ -19,17 +18,16 @@ class Dashboard extends Component {
   }
 
   render() {
-    //destructuring
     const { user } = this.props.auth;
     const { profile, loading } = this.props.profile;
 
     let dashboardContent;
+
     if (profile === null || loading) {
       dashboardContent = <Spinner />;
     } else {
-      //Check if logged in user has profile data
+      // Check if logged in user has profile data
       if (Object.keys(profile).length > 0) {
-        //User name will link to their profile--will be a link
         dashboardContent = (
           <div>
             <p className="lead text-muted">
@@ -38,7 +36,6 @@ class Dashboard extends Component {
             <ProfileActions />
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
-
             <div style={{ marginBottom: "60px" }} />
             <button
               onClick={this.onDeleteClick.bind(this)}
@@ -53,10 +50,7 @@ class Dashboard extends Component {
         dashboardContent = (
           <div>
             <p className="lead text-muted">Welcome {user.name}</p>
-            <p>
-              You have not set up a profile, please add some information about
-              yourself
-            </p>
+            <p>You have not yet setup a profile, please add some info</p>
             <Link to="/create-profile" className="btn btn-lg btn-info">
               Create Profile
             </Link>
@@ -70,7 +64,7 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="dis-4">Dashboard</h1>
+              <h1 className="display-4">Dashboard</h1>
               {dashboardContent}
             </div>
           </div>
@@ -94,6 +88,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-
   { getCurrentProfile, deleteAccount }
 )(Dashboard);

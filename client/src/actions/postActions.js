@@ -14,7 +14,7 @@ export const addPost = postData => dispatch => {
     .catch(err =>
       dispatch({
         type: GET_ERRORS,
-        payload: error.response.data
+        payload: err.response.data
       })
     );
 };

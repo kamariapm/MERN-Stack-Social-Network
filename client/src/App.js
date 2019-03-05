@@ -28,22 +28,23 @@ import NotFound from "./components/not-found/NotFound";
 
 import "./App.css";
 
-//Check for token
+// Check for token
 if (localStorage.jwtToken) {
-  //set auth token header auth
+  // Set auth token header auth
   setAuthToken(localStorage.jwtToken);
-  //decode token and get user info and expiration
+  // Decode token and get user info and exp
   const decoded = jwt_decode(localStorage.jwtToken);
-  //call set current user aciton and is authenticate
+  // Set user and isAuthenticated
   store.dispatch(setCurrentUser(decoded));
 
-  //Check for expired token
+  // Check for expired token
   const currentTime = Date.now() / 1000;
   if (decoded.exp < currentTime) {
-    //Logout the user
+    // Logout user
     store.dispatch(logoutUser());
-    //Clear current profile and redirect to login
+    // Clear current Profile
     store.dispatch(clearCurrentProfile());
+    // Redirect to login
     window.location.href = "/login";
   }
 }
@@ -55,7 +56,6 @@ class App extends Component {
         <Router>
           <div className="App">
             <Navbar />
-            {/* if 'exact' is not added, it will show content from multiple pages. Landing page NOT in container so background image will fill screen*/}
             <Route exact path="/" component={Landing} />
             <div className="container">
               <Route exact path="/register" component={Register} />

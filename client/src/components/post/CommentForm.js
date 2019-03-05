@@ -16,7 +16,6 @@ class CommentForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  //this does actual error checking
   componentWillReceiveProps(newProps) {
     if (newProps.errors) {
       this.setState({ errors: newProps.errors });
@@ -75,7 +74,7 @@ class CommentForm extends Component {
 }
 
 CommentForm.propTypes = {
-  addPost: PropTypes.func.isRequired,
+  addComment: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   postId: PropTypes.string.isRequired,
   errors: PropTypes.object.isRequired

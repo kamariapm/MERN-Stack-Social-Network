@@ -1,10 +1,6 @@
-##
+## realDevsMeet
 
-realDevsMeet
-
-###
-
-Technologies used
+### Technologies used
 
 1. MongoDB
 2. Express.js

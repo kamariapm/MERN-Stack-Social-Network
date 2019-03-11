@@ -10,6 +10,6 @@ Social networking site for developers.
 - React.js
 - Node.js
 
-#### Link to site
+### Link to site
 
 (https://real-devs-meet.herokuapp.com/)

@@ -6,9 +6,14 @@ Social networking site for developers.
 ## Technologies used
 
 - MongoDB
+- Mongoose
 - Express.js
 - React.js
 - Node.js
+- Redux
+- JSON Web Token
+- Axios
+- Bootstrap
 
 ### Link to site
 

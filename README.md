@@ -17,4 +17,4 @@ Social networking site for developers.
 
 ### Link to site
 
-(https://real-devs-meet.herokuapp.com/)
+(https://real-developer-connect.herokuapp.com)

@@ -19,8 +19,8 @@ Social networking site for Developers.
 
 (https://real-developer-connect.herokuapp.com)
 
-## License 
+## Project is Licenseed as 
 
-[MIT](https://github.com/web-codegrammer/Suse-cloud-Native-Fondation-Course-prerequisites/blob/main/LICENSE)
+[MIT](https://github.com/web-codegrammer/DevConnector-A-Social-Network-for-Developers/blob/master/LICENSE)
 
 Issued to ```Devanshu Vashishtha``` | Copyright ©️ 2021-2022 [web-codegrammer](https://github.com/web-codegrammer). All Rights Reserved | 2021

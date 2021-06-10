@@ -1,7 +1,7 @@
 # DevConnector - A Social Network for Developers
 
-Full Stack web app.
-Social networking site for Developers.
+DevConnector is a Full Stack web app that lets you create a developer profile/portfolio, share posts and get help from other developers.
+Social networking site for Developers built on MERN Stack.
 
 ## Technologies used
 

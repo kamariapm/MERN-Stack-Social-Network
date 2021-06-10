@@ -23,7 +23,7 @@ Social networking site for Developers.
 
 ### Author
 
-###### Devanshu Vashishtha
+#### Devanshu Vashishtha
 [web-codegrammer](https://github.com/web-codegrammer)
 
 ### Version

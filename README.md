@@ -19,7 +19,7 @@ Social networking site for Developers.
 
 (https://real-developer-connect.herokuapp.com)
 
-## Project is Licenseed as 
+## Project is Licensed Under the
 
 [MIT](https://github.com/web-codegrammer/DevConnector-A-Social-Network-for-Developers/blob/master/LICENSE)
 

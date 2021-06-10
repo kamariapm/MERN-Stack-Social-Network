@@ -19,7 +19,18 @@ Social networking site for Developers.
 
 (https://real-developer-connect.herokuapp.com)
 
-## Project is Licensed Under the
+## App Info
+
+### Author
+
+# Devanshu Vashishtha
+[web-codegrammer](https://github.com/web-codegrammer)
+
+### Version
+
+V12.0
+
+## Project is Licensed Under the MIT License as
 
 [MIT](https://github.com/web-codegrammer/DevConnector-A-Social-Network-for-Developers/blob/master/LICENSE)
 

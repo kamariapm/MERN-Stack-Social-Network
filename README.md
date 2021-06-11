@@ -9,6 +9,8 @@ Social networking site for Developers built on MERN Stack.
 - Mongoose
 - Express.js
 - React.js
+- React Hooks
+- Async/Await
 - Node.js
 - Redux
 - JSON Web Token

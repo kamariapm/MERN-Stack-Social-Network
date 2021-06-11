@@ -3,6 +3,10 @@
 DevConnector is a Full Stack web app that lets you create a developer profile/portfolio, share posts and get help from other developers.
 Social networking site for Developers built on MERN Stack.
 
+- Developed a full stack social networking web application for developers using MERN stack where users can create a developer profile/portfolio, share posts and get help from other developers. This project is built using extensive backend API with Node.js and Express.
+- Used Postman for API testing and Redux for app state management. Deployment of the application to Heroku with a post-build script.
+
+
 ## Technologies used
 
 - MongoDB

@@ -1,6 +1,6 @@
 # DevConnector - A Social Network for Developers
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/DevConnector-A-Social-Network-for-Developers/DevConnector-A-Social-Network-for-Developers?color=limegreen&label=latest&logo=github&sort=semver)](CHANGELOG)
+[![GitHub tag (latest SemVer)](https://img.shields.io/badge/v-12.0-yellowgreen)](CHANGELOG)
 
 DevConnector is a Full Stack web app that lets you create a developer profile/portfolio, share posts and get help from other developers.
 Social networking site for Developers built on MERN Stack.

@@ -29,7 +29,7 @@
 
 ### Link to Web Application (Heroku Deployment)
 
-### 👉👉 [Live Here](https://real-developer-connect.herokuapp.com)
+### 👉👉 [Live Here](https://real-dev-connector-app.herokuapp.com)
 
 ## App Info
 
